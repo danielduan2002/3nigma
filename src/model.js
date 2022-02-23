@@ -5,7 +5,7 @@ import {PointLight} from '../node_modules/three/src/lights/PointLight.js';
 import {PerspectiveCamera} from '../node_modules/three/src/cameras/PerspectiveCamera.js';
 import {Scene} from '../node_modules/three/src/scenes/Scene.js';
 import {WebGLRenderer} from '../node_modules/three/src/renderers/WebGLRenderer.js';
-import {OrbitControls} from 'https://cdn.skypack.dev/three@0.134.0/examples/jsm/controls/OrbitControls';
+import {OrbitControls} from '../node_modules/three/examples/jsm/controls/OrbitControls';
 import {AnimationMixer} from '../node_modules/three/src/animation/AnimationMixer.js';
 import {Clock} from '../node_modules/three/src/core/Clock.js';
 import {MeshStandardMaterial} from '../node_modules/three/src/materials/MeshStandardMaterial.js';

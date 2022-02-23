@@ -10,7 +10,7 @@ var loader = new GLTFLoader();
 var machine;
 var myModel;
 var myMachine;
-loader.load('./models/enigmaModel', function(gltf) {
+loader.load('./models/enigmaModel.gltf', function(gltf) {
     machine = gltf.scene;
     makeMachine();
     myModel = new Model(machine);
