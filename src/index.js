@@ -1,5 +1,5 @@
 
-import {GLTFLoader} from 'https://cdn.skypack.dev/three@0.134.0/examples/jsm/loaders/GLTFLoader.js';
+import {GLTFLoader} from '../node_modules/three/examples/jsm/loaders/GLTFLoader.js';
 
 import {Rotor} from './rotor.js';
 import {Machine} from './machine.js';
