@@ -1,6 +1,8 @@
 
 import {GLTFLoader} from '../node_modules/three/examples/jsm/loaders/GLTFLoader.js';
 
+// const GLTFLoader = import('../node_modules/three/examples/jsm/loaders/GLTFLoader.js');
+
 import {Rotor} from './rotor.js';
 import {Machine} from './machine.js';
 import {Plugboard} from './plugboard.js';
