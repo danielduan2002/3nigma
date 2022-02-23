@@ -1,14 +1,21 @@
-import {AmbientLight} from '../node_modules/three/src/lights/AmbientLight.js';
-import {AxesHelper} from '../node_modules/three/src/helpers/AxesHelper.js';
-import {DirectionalLight} from '../node_modules/three/src/lights/DirectionalLight.js';
-import {PointLight} from '../node_modules/three/src/lights/PointLight.js';
-import {PerspectiveCamera} from '../node_modules/three/src/cameras/PerspectiveCamera.js';
-import {Scene} from '../node_modules/three/src/scenes/Scene.js';
-import {WebGLRenderer} from '../node_modules/three/src/renderers/WebGLRenderer.js';
-import {OrbitControls} from '../node_modules/three/examples/jsm/controls/OrbitControls.js';
-import {AnimationMixer} from '../node_modules/three/src/animation/AnimationMixer.js';
-import {Clock} from '../node_modules/three/src/core/Clock.js';
-import {MeshStandardMaterial} from '../node_modules/three/src/materials/MeshStandardMaterial.js';
+import AmbientLight from '../node_modules/three/src/lights/AmbientLight.js';
+const {AmbientLight} = Ambient;
+import AxesHelper from '../node_modules/three/src/helpers/AxesHelper.js';
+const {AxesHelper} = AxesHelper;
+import DirectionalLight from '../node_modules/three/src/lights/DirectionalLight.js';
+const {DirectionalLight} = DirectionalLight;
+import PointLight from '../node_modules/three/src/lights/PointLight.js';
+const {PointLight} = PointLight;
+import PerspectiveCamera from '../node_modules/three/src/cameras/PerspectiveCamera.js';
+const {PerspectiveCamera} = PerspectiveCamera;
+import Scene from '../node_modules/three/src/scenes/Scene.js';
+const {Scene} = Scene;
+import WebGLRenderer from '../node_modules/three/src/renderers/WebGLRenderer.js';
+const {WebGLRenderer} = WebGLRenderer;
+import OrbitControls from '../node_modules/three/examples/jsm/controls/OrbitControls.js';
+const {OrbitControls} = OrbitControls;
+import Clock from '../node_modules/three/src/core/Clock.js';
+const {Clock} = Clock;
 
 // rgbencoding
 
