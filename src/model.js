@@ -1,21 +1,21 @@
-import pkg1 from '../node_modules/three/src/lights/AmbientLight.js';
-const {AmbientLight} = pkg1;
-import pkg2 from '../node_modules/three/src/helpers/AxesHelper.js';
-const {AxesHelper} = pkg2;
-import pkg3 from '../node_modules/three/src/lights/DirectionalLight.js';
-const {DirectionalLight} = pkg3;
-import pkg4 from '../node_modules/three/src/lights/PointLight.js';
-const {PointLight} = pkg4;
-import pkg5 from '../node_modules/three/src/cameras/PerspectiveCamera.js';
-const {PerspectiveCamera} = pkg5;
-import pkg6 from '../node_modules/three/src/scenes/Scene.js';
-const {Scene} = pkg6;
-import pkg7 from '../node_modules/three/src/renderers/WebGLRenderer.js';
-const {WebGLRenderer} = pkg7;
-import pkg8 from '../node_modules/three/examples/jsm/controls/OrbitControls.js';
-const {OrbitControls} = pkg8;
-import pkg9 from '../node_modules/three/src/core/Clock.js';
-const {Clock} = pkg9;
+import AmbientLight from '../node_modules/three/src/lights/AmbientLight.js';
+// const {AmbientLight} = pkg1;
+import AxesHelper from '../node_modules/three/src/helpers/AxesHelper.js';
+// const {AxesHelper} = pkg2;
+import DirectionalLight from '../node_modules/three/src/lights/DirectionalLight.js';
+// const {DirectionalLight} = pkg3;
+import PointLight from '../node_modules/three/src/lights/PointLight.js';
+// const {PointLight} = pkg4;
+import PerspectiveCamera from '../node_modules/three/src/cameras/PerspectiveCamera.js';
+// const {PerspectiveCamera} = pkg5;
+import Scene from '../node_modules/three/src/scenes/Scene.js';
+// const {Scene} = pkg6;
+import WebGLRenderer from '../node_modules/three/src/renderers/WebGLRenderer.js';
+// const {WebGLRenderer} = pkg7;
+import OrbitControls from '../node_modules/three/examples/jsm/controls/OrbitControls.js';
+// const {OrbitControls} = pkg8;
+import Clock from '../node_modules/three/src/core/Clock.js';
+// const {Clock} = pkg9;
 
 // rgbencoding
 

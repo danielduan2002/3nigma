@@ -1,8 +1,5 @@
 
-import pkg1 from '../node_modules/three/examples/jsm/loaders/GLTFLoader.js';
-const {GLTFLoader} = pkg1;
-
-// const GLTFLoader = import('../node_modules/three/examples/jsm/loaders/GLTFLoader.js');
+import GLTFLoader from '../node_modules/three/examples/jsm/loaders/GLTFLoader.js';
 
 import {Rotor} from './rotor.js';
 import {Machine} from './machine.js';
