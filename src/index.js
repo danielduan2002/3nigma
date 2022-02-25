@@ -8,7 +8,7 @@ import {Plugboard} from './plugboard.js';
 import {Model} from './model.js';
 
 const draco = new DRACOLoader();
-draco.setDecoderPath('../node_modules/three/examples/js/libs/draco/gltf/');
+draco.setDecoderPath('https://cdn.skypack.dev/three@0.129.0/three/examples/js/libs/draco/gltf/');
 const loader = new GLTFLoader().setDRACOLoader(draco);
 
 var machine;
