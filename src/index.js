@@ -1,16 +1,20 @@
-
-import GLTFLoader from '../node_modules/three/examples/jsm/loaders/GLTFLoader.js';
+import {GLTFLoader} from 'https://cdn.skypack.dev/three@0.129.0/examples/jsm/loaders/GLTFLoader.js';
+import {DRACOLoader} from 'https://cdn.skypack.dev/three@0.129.0/examples/jsm/loaders/DRACOLoader.js';
+// import {DRACOLoader} from '../node_modules/three/examples/jsm/loaders/DRACOLoader.js';
 
 import {Rotor} from './rotor.js';
 import {Machine} from './machine.js';
 import {Plugboard} from './plugboard.js';
 import {Model} from './model.js';
 
-var loader = new GLTFLoader();
+const draco = new DRACOLoader();
+draco.setDecoderPath('../node_modules/three/examples/js/libs/draco/gltf/');
+const loader = new GLTFLoader().setDRACOLoader(draco);
+
 var machine;
 var myModel;
 var myMachine;
-loader.load('./models/enigmaModel.gltf', function(gltf) {
+loader.load('./models/compressed.gltf', function(gltf) {
     machine = gltf.scene;
     makeMachine();
     myModel = new Model(machine);

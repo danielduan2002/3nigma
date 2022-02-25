@@ -1,21 +1,21 @@
-import AmbientLight from '../node_modules/three/src/lights/AmbientLight.js';
-// const {AmbientLight} = pkg1;
-import AxesHelper from '../node_modules/three/src/helpers/AxesHelper.js';
-// const {AxesHelper} = pkg2;
-import DirectionalLight from '../node_modules/three/src/lights/DirectionalLight.js';
-// const {DirectionalLight} = pkg3;
-import PointLight from '../node_modules/three/src/lights/PointLight.js';
-// const {PointLight} = pkg4;
-import PerspectiveCamera from '../node_modules/three/src/cameras/PerspectiveCamera.js';
-// const {PerspectiveCamera} = pkg5;
-import Scene from '../node_modules/three/src/scenes/Scene.js';
-// const {Scene} = pkg6;
-import WebGLRenderer from '../node_modules/three/src/renderers/WebGLRenderer.js';
-// const {WebGLRenderer} = pkg7;
-import OrbitControls from '../node_modules/three/examples/jsm/controls/OrbitControls.js';
-// const {OrbitControls} = pkg8;
-import Clock from '../node_modules/three/src/core/Clock.js';
-// const {Clock} = pkg9;
+import {AmbientLight} from 'https://cdn.skypack.dev/three@0.129.0/src/lights/AmbientLight.js';
+// import {DirectionalLight} from 'https://cdn.skypack.dev/three@0.129.0/src/lights/DirectionalLight.js';
+import {PointLight} from 'https://cdn.skypack.dev/three@0.129.0/src/lights/PointLight.js';
+import {PerspectiveCamera} from 'https://cdn.skypack.dev/three@0.129.0/src/cameras/PerspectiveCamera.js';
+import {Scene} from 'https://cdn.skypack.dev/three@0.129.0/src/scenes/Scene.js';
+import {WebGLRenderer} from 'https://cdn.skypack.dev/three@0.129.0/src/renderers/WebGLRenderer.js';
+import {OrbitControls} from 'https://cdn.skypack.dev/three@0.129.0/examples/jsm/controls/OrbitControls.js';
+import {Clock} from 'https://cdn.skypack.dev/three@0.129.0/src/core/Clock.js';
+
+// import AmbientLight from '../node_modules/three/src/lights/AmbientLight.js';
+// import AxesHelper from '../node_modules/three/src/helpers/AxesHelper.js';
+// import DirectionalLight from '../node_modules/three/src/lights/DirectionalLight.js';
+// import PointLight from '../node_modules/three/src/lights/PointLight.js';
+// import PerspectiveCamera from '../node_modules/three/src/cameras/PerspectiveCamera.js';
+// import Scene from '../node_modules/three/src/scenes/Scene.js';
+// import WebGLRenderer from '../node_modules/three/src/renderers/WebGLRenderer.js';
+// import OrbitControls from '../node_modules/three/examples/jsm/controls/OrbitControls.js';
+// import Clock from '../node_modules/three/src/core/Clock.js';
 
 // rgbencoding
 
@@ -63,7 +63,7 @@ class Model {
     
         this.setMetalness(this.metalness);
 
-        this.setOpacity(this.machine, 0.2);
+        this.setOpacity(this.machine, 1);
     
         this.machine.traverse((object) => {
             if (object.material && !this.materialNames.includes(object.material.name)) {
