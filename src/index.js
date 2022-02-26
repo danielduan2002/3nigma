@@ -8,7 +8,11 @@ import {Plugboard} from './plugboard.js';
 import {Model} from './model.js';
 
 const draco = new DRACOLoader();
-draco.setDecoderPath('https://cdn.skypack.dev/three@0.129.0/three/examples/js/libs/draco/gltf/');
+// draco.setDecoderPath('../node_modules/three/examples/js/libs/draco/gltf/');
+draco.setDecoderConfig({ type: 'js' });
+// draco.setDecoderPath('https://unpkg.com/three@0.114.0/examples/js/libs/draco/');
+draco.setDecoderPath('https://www.gstatic.com/draco/v1/decoders/');
+
 const loader = new GLTFLoader().setDRACOLoader(draco);
 
 var machine;
