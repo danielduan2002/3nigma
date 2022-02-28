@@ -18,7 +18,7 @@ const loader = new GLTFLoader().setDRACOLoader(draco);
 var machine;
 var myModel;
 var myMachine;
-loader.load('./models/compressed.gltf', function(gltf) {
+loader.load('./models/enigmaModel.gltf', function(gltf) {
     machine = gltf.scene;
     makeMachine();
     myModel = new Model(machine);
