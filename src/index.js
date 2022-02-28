@@ -23,19 +23,13 @@ loader.load('./models/enigmaModel.gltf', function(gltf) {
     makeMachine();
     myModel = new Model(machine);
     // console.log(myModel.materials[0].color);
-    myModel.materials[0].color = {r: 0.2, g: 0.4, b: 0.4};
-    console.log(myModel.materials);
-    // console.log(myModel.materials[0].fog);
+    myModel.materials[0].color = {r: 0.1, g: 0.45, b: 0.45};
     myModel.materials[0].fog = false;
     myModel.materials[0].metalness = 0;
 
-    myModel.materials[1] = myModel.materials[13];
-    myModel.materials[3] = myModel.materials[13];
-    myModel.materials[4] = myModel.materials[13];
-    
-    // myModel.rotate(0);
-    // myModel.rotate(1);
-    // myModel.rotate(2);
+    // myModel.materials[1] = myModel.materials[13];
+    // myModel.materials[3] = myModel.materials[13];
+    // myModel.materials[4] = myModel.materials[13];
     
 });
 
@@ -107,4 +101,9 @@ metallicButton.addEventListener("change", () => {
     } else {
         myModel.setMetalness(0.2);
     }
+})
+
+let axesCheckBox = document.getElementById("checkbox4");
+axesCheckBox.addEventListener("change", () => {
+    myModel.toggleAxes();
 });
